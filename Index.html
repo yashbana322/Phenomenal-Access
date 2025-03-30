@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phenomenal Access - Watch Anime Free</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🔥 Phenomenal Access 🔥</h1>
+        <input type="text" id="search" placeholder="Search for anime..." onkeyup="searchAnime()">
+    </header>
+    <section id="categories">
+        <button onclick="filterCategory('trending')">🔥 Trending</button>
+        <button onclick="filterCategory('new')">🆕 New Releases</button>
+        <button onclick="filterCategory('popular')">⭐ Popular</button>
+        <button onclick="filterCategory('top-rated')">🏆 Top Rated</button>
+        <button onclick="filterCategory('upcoming')">🔜 Upcoming</button>
+    </section>
+    <section id="anime-list">
+        <!-- 100+ Anime with thumbnails and links -->
+        <div class="anime" data-category="trending">
+            <img src="https://m.media-amazon.com/images/I/81vSkeWXA3L._AC_UF1000,1000_QL80_.jpg" alt="Solo Leveling">
+            <h2>Solo Leveling</h2>
+            <a href="https://zoroto.tv/search?keyword=Solo+Leveling" target="_blank" class="redirect">Watch Now</a>
+        </div>
+        <div class="anime" data-category="new">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Kimetsu_no_Yaiba_cover_-_vol_1.jpg" alt="Demon Slayer">
+            <h2>Demon Slayer: New Arc</h2>
+            <a href="https://animepahe.com/" target="_blank" class="redirect">Watch Now</a>
+        </div>
+        <div class="anime" data-category="popular">
+            <img src="https://m.media-amazon.com/images/I/81TZXz2VhxL._AC_UF1000,1000_QL80_.jpg" alt="One Piece">
+            <h2>One Piece</h2>
+            <a href="https://hianime.to/search?keyword=One+Piece" target="_blank" class="redirect">Watch Now</a>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html
