@@ -1,0 +1,78 @@
+/* 🌑 Dark Mode Background */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* 🔥 Main Title - White with Rising Blue Flames */
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    text-shadow: 0 0 15px blue;
+}
+
+/* 🔥 Blue Flames Animation */
+h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 120px;
+    height: 60px;
+    background: radial-gradient(circle, rgba(0,191,255,0.8) 0%, rgba(0,0,0,0) 80%);
+    transform: translateX(-50%);
+    animation: flames 1.5s infinite alternate;
+}
+
+@keyframes flames {
+    0% { opacity: 1; bottom: -10px; }
+    100% { opacity: 0; bottom: -40px; }
+}
+
+/* 🎴 Anime Grid Layout */
+#animeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* 🖼️ Anime Thumbnails */
+.anime-item {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.8);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.anime-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ✨ Hover Effect */
+.anime-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 191, 255, 1);
+}
+
+/* 🌟 Anime Titles */
+.anime-item p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00FFFF;
+    text-shadow: 2px 2px 8px #00FFFF;
+    text-align: center;
+    margin-top: 10px;
