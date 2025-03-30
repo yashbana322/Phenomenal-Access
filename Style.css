@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    background-color: #222;
+}
+
+h1 {
+    font-size: 30px;
+    background: linear-gradient(to right, red, orange, yellow);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(255, 69, 0, 0.8);
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid orange;
+    background: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+#categories {
+    margin: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff6200;
+}
+
+.anime {
+    background: #333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.anime:hover {
+    transform: scale(1.05);
+    background: #444;
+}
+
+.anime img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
